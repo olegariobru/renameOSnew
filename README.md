@@ -58,5 +58,14 @@ Python 3.x instalado
 
 
 
+## Proximos updates
+
+- Inclusão de planilha para alteração de nome.
+- Ajustes no design do software
+- entre outras... 
+
+
+
+
 📜 Licença
-Este projeto está licenciado sob a licença MIT - sinta-se livre para usar e modificar.
+sinta-se livre para usar e modificar.
