@@ -24,6 +24,14 @@ ABA (MOVER ARQUIVOS)
 
 ---
 
+## 🚀 Como usar a aba Renomear:
+
+1. Selecione os arquivos.
+2. Caso tenha algum arquivo incorreto, selecione e clique em remover selecionados.
+3. O botão "preencher com nomes atuais" vai inserir os nomes atuais no campo "Novos nomes".
+4. Insira o nome desejado que será incluido ao arquivo.
+5. Clique em Renomear arquivos.
+
 
 ## 🚀 Como usar a aba mover arquivos:
 
@@ -42,6 +50,13 @@ Python 3.x instalado
 
 
 ```
+
+<img width="712" height="539" alt="image" src="https://github.com/user-attachments/assets/34a79152-76da-4861-b423-7931de21f5f4" />
+
+<img width="713" height="535" alt="image" src="https://github.com/user-attachments/assets/81726b2e-4e06-4411-893c-ba9620bab39f" />
+
+
+
 
 📜 Licença
 Este projeto está licenciado sob a licença MIT - sinta-se livre para usar e modificar.
