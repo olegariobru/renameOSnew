@@ -1,71 +1,76 @@
-# 📝 UpdateRenameOS1.0
+# RenameOS Desktop
 
-Este projeto é uma atualização do script renameOs em Python.
-Este projeto é um auxilio na Alteração de nomes de arquivos tanto unificado como em massa, nessa versão eu adicionei uma aba ao software onde você consegue mover arquivos de um diretorio especifico 
-para outro em uma grande massa de arquivos de uma vez.
----
+Aplicação desktop para renomear e mover arquivos em lote com uma interface gráfica. Evolução do [script RenameOS](https://github.com/olegariobru/renameOs).
 
-## 📌 Funcionalidade
-ABA (RENOMEAR):
-  - Selecionador de arquivos.
-  - Removedor de arquivos selecionados.
-  - Contador de arquivos incluidos na lista.
-  - Comparador de arquivos. 
-  - Botão para renomear.
-  - Campo com os arquivos selecionados.
-  - Campo com os novos nomes que os arquivos selecionados irá receber.
+## Demonstração
 
-ABA (MOVER ARQUIVOS)
-  - Campo para selecionar a PASTA DE ORIGEM (deve conter todos os arquivos).
-  - Campo para selecionar a PASTA DE DESTINO (onde os arquivos selecionados serão movidos).
-  - Opção para pesquisar via nome do arquivo (deve conter a extensão).
-  - Opção para mover via quantidade de arquivos.
-  - Opção para ler um arquivo .TXT (Os nomes inseridos neste arquivo .TXT deve esta um por linha, contendo a extensão e nome correto).
+![Interface de renomeação de arquivos](https://github.com/user-attachments/assets/34a79152-76da-4861-b423-7931de21f5f4)
 
----
+![Interface de movimentação de arquivos](https://github.com/user-attachments/assets/81726b2e-4e06-4411-893c-ba9620bab39f)
 
-## 🚀 Como usar a aba Renomear:
+## Funcionalidades
 
-1. Selecione os arquivos.
-2. Caso tenha algum arquivo incorreto, selecione e clique em remover selecionados.
-3. O botão "preencher com nomes atuais" vai inserir os nomes atuais no campo "Novos nomes".
-4. Insira o nome desejado que será incluido ao arquivo.
-5. Clique em Renomear arquivos.
+### Renomeação
 
+- Seleção de múltiplos arquivos.
+- Remoção de itens da seleção.
+- Preenchimento com os nomes atuais.
+- Contagem de arquivos e novos nomes.
+- Validação de quantidade e detecção de destinos existentes.
+- Preservação da extensão quando o novo nome não contém ponto.
 
-## 🚀 Como usar a aba mover arquivos:
+### Movimentação
 
-1. Coloque o caminho que contem o arquivo que precisa ser movido ou os arquivos.
-2. Coloque o caminho que os arquivos deverá ser movidos.
-3. Coloque o nome do arquivo que deseja mover, OU
-4. Coloque a quantidade de arquivos que deverá ser movido de uma vez, OU
-5. Crie o arquivo `move.txt` com o nome dos arquivos que deverá ser movido de uma vez.
-6. Clique em "mover arquivos"
+- Seleção de pastas de origem e destino.
+- Seleção por lista TXT, nomes separados por vírgula ou quantidade.
+- Prioridade de seleção: TXT, nomes digitados e quantidade.
+- Exibição da quantidade de itens movidos.
 
+## Tecnologias
+
+Python 3, Tkinter, `os` e `shutil`. A execução do código-fonte não exige bibliotecas externas, mas requer uma instalação Python com Tkinter.
+
+## Como executar
+
+```bash
+git clone https://github.com/olegariobru/renameOSnew.git
+cd renameOSnew
+python -m tkinter
+python updateRenameOS.py
 ```
 
+O primeiro comando Python verifica se o Tkinter está disponível e abre sua janela de demonstração.
 
-🛠 Requisitos
-Python 3.x instalado
+## Como utilizar
 
+Na aba **Renomear**, selecione os arquivos e informe um novo nome por linha, respeitando a ordem da lista. Confira a quantidade e confirme a operação.
 
-```
+Na aba **Mover Arquivos**, selecione origem e destino e informe um dos critérios. Em um TXT, utilize um nome completo por linha, incluindo a extensão.
 
-<img width="712" height="539" alt="image" src="https://github.com/user-attachments/assets/34a79152-76da-4861-b423-7931de21f5f4" />
+Faça a verificação inicial com cópias: renomeações e movimentações alteram os arquivos diretamente.
 
-<img width="713" height="535" alt="image" src="https://github.com/user-attachments/assets/81726b2e-4e06-4411-893c-ba9620bab39f" />
+## Organização
 
+- `updateRenameOS.py`: interface e operações.
+- `updateRenameOS.spec`: configuração de empacotamento.
+- `build/` e `dist/`: artefatos de uma compilação anterior com PyInstaller.
 
+## Limitações e próximos passos
 
+- Não há testes automatizados nem rollback das operações.
+- A seleção por quantidade usa a ordem retornada pelo sistema de arquivos.
+- Separar interface e lógica de operações.
+- Adicionar simulação, relatórios e tratamento mais completo de conflitos.
+- Distribuir executáveis por releases e evitar versionar novos arquivos de build.
 
-## Proximos updates
+## Como contribuir
 
-- Inclusão de planilha para alteração de nome.
-- Ajustes no design do software
-- entre outras... 
+Abra uma issue com o problema ou a melhoria proposta. Para enviar código, crie um fork e uma branch, mantenha a alteração focada e abra um pull request explicando o resultado e como verificou o funcionamento.
 
+## Licença
 
+Este repositório ainda não contém um arquivo `LICENSE`. A licença de uso e redistribuição precisa ser formalizada pelo autor.
 
+## Autor
 
-📜 Licença
-sinta-se livre para usar e modificar.
+[Bruno Olegário](https://github.com/olegariobru) · [LinkedIn](https://www.linkedin.com/in/bolgarimacedo/)
